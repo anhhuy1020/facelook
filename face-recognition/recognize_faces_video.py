@@ -1,4 +1,5 @@
 from imutils.video import VideoStream
+from imutils.video import FPS
 import face_recognition
 import imutils
 import pickle
@@ -6,34 +7,41 @@ import time
 import cv2
 
 
-def recognizing(detectionMethod):
+def recognizing():
     # load the known faces and embeddings
-    print("[INFO] loading encodings...")
+    print("[INFO] loading encodings + face detector...")
+    detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
     data = pickle.loads(open("encodings.pickle", "rb").read())
     # initialize the video stream and pointer to output video file, then
     # allow the camera sensor to warm up
     print("[INFO] starting video stream...")
     vs = VideoStream(src=0).start()
-    writer = None
     time.sleep(2.0)
     start_time = time.time()
     duration = 15
+    fps = FPS().start()
 
     while True:
-        # grab the frame from the threaded video stream
+        # grab the frame from the threaded video stream and resize it
+        # to 500px (to speedup processing)
         frame = vs.read()
+        frame = imutils.resize(frame, width=500)
 
-        # convert the input frame from BGR to RGB then resize it to have
-        # a width of 750px (to speedup processing)
+        # convert the input frame from (1) BGR to grayscale (for face
+        # detection) and (2) from BGR to RGB (for face recognition)
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        rgb = imutils.resize(frame, width=750)
-        r = frame.shape[1] / float(rgb.shape[1])
 
-        # detect the (x, y)-coordinates of the bounding boxes
-        # corresponding to each face in the input frame, then compute
-        # the facial embeddings for each face
-        boxes = face_recognition.face_locations(rgb,
-                                                model=detectionMethod)
+        # detect faces in the grayscale frame
+        rects = detector.detectMultiScale(gray, scaleFactor=1.1,
+                                          minNeighbors=5, minSize=(30, 30),
+                                          flags=cv2.CASCADE_SCALE_IMAGE)
+
+        # OpenCV returns bounding box coordinates in (x, y, w, h) order
+        # but we need them in (top, right, bottom, left) order, so we
+        # need to do a bit of reordering
+        boxes = [(y, x + w, y + h, x) for (x, y, w, h) in rects]
+
         if (len(boxes) <= 0):
             cv2.imshow("Frame", frame)
             key = cv2.waitKey(1) & 0xFF
@@ -43,11 +51,6 @@ def recognizing(detectionMethod):
             continue
 
         for (top, right, bottom, left) in boxes:
-            # rescale the face coordinates
-            top = int(top * r)
-            right = int(right * r)
-            bottom = int(bottom * r)
-            left = int(left * r)
 
             # draw the predicted face name on the image
             cv2.rectangle(frame, (left, top), (right, bottom),
@@ -59,6 +62,8 @@ def recognizing(detectionMethod):
             # if the `q` key was pressed, break from the loop
             if key == ord("q"):
                 break
+
+            fps.update()
 
         encoding = face_recognition.face_encodings(rgb, boxes)[0]
         names = []
@@ -89,6 +94,9 @@ def recognizing(detectionMethod):
             print("Finished because of running out of time!")
             return False
     # do a bit of cleanup
+    fps.stop()
+    print("[INFO] elasped time: {:.2f}".format(fps.elapsed()))
+    print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
     cv2.destroyAllWindows()
     vs.stop()
 

@@ -5,6 +5,5 @@ import imutils
 import cv2
 import time
 
-
-# encode_faces.train("huy", "hoc")
-recognize_faces_video.recognizing("hoc")
+encode_faces.train("huy", "hoc")
+recognize_faces_video.recognizing()
