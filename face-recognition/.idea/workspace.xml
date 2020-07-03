@@ -2,14 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43001e49-a6bd-4530-8ff3-ac965016023a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pi_lock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/anim/app_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/anim/app_splash_subtitle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_loading.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encode_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/encode_faces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encodings.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/encodings.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000000.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000015.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000041.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000046.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000063.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000082.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000089.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognize_faces_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognize_faces_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize_faces_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognize_faces_video_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognize_faces_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_bing_api.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +60,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/program.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\DH\DA LTHT VDK\facelook\face-recognition" />
       <recent name="F:\workspace\DH\DA LTHT VDK\face-recognition-opencv" />
     </key>
   </component>
@@ -53,7 +82,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="program" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="network" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="face-recognition-opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,6 +123,9 @@
       <workItem from="1593333074816" duration="1210000" />
       <workItem from="1593353208777" duration="3169000" />
       <workItem from="1593363791497" duration="1375000" />
+      <workItem from="1593655443783" duration="6164000" />
+      <workItem from="1593782988505" duration="1267000" />
+      <workItem from="1593784955822" duration="13475000" />
     </task>
     <servers />
   </component>
@@ -105,7 +137,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -130,7 +164,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/face_recognition$Network.coverage" NAME="network Coverage Results" MODIFIED="1593798360436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face_recognition_opencv$program.coverage" NAME="program Coverage Results" MODIFIED="1591523426506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/face_recognition$program.coverage" NAME="program Coverage Results" MODIFIED="1593364503806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/face_recognition$program.coverage" NAME="program Coverage Results" MODIFIED="1593705442837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Network" />
   </component>
 </project>

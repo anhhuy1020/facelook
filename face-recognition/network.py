@@ -1,22 +1,44 @@
-import socket
-import struct
-from PIL import Image
-import cv2
-
-serverAddressPort = ("127.0.0.1", 5005)
+import asyncio
+import constant
 
 
-server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-data = b""
-payload_size = struct.calcsize(">L")
-server.bind(serverAddressPort)
-server.listen(10)
-conn, addr = server.accept()
+session = 0
+handlers = []
 
-while True:
-    size = server.recv(4096)
-    data = server.recv(size)
-    frame = image = Image.frombytes('RGBA', (500, 700), data, 'raw')
-    frame = cv2.imdecode(frame, cv2.IMREAD_COLOR)
-    cv2.imshow('ImageWindow', frame)
-    cv2.waitKey(1)
+
+def get_session():
+    global session
+    session += 1
+    return session
+
+
+class pi_handler:
+    def __init__(self, reader, writer):
+        self.reader = reader
+        self.writer = writer
+
+    def lock(self):
+        self.writer.write("lock".encode('utf8'))
+
+    def unlock(self):
+        self.writer.write("unlock".encode('utf8'))
+
+
+class app_handler:
+    def __init__(self, reader, writer, handle_client_request_cb):
+        self.reader = reader
+        self.writer = writer
+        self.handle_request_cb = handle_client_request_cb
+        self.session = get_session()
+
+    def send(self, msg):
+        self.writer.write(msg + "\n").encode('utf8')
+
+    async def run(self):
+        while True:
+            msg = str((await self.reader.read(constant.BUFF_SIZE)).decode('utf8')).split(constant.SEPARATOR)
+            if self.handle_request_cb is not None:
+                self.handle_request_cb(msg)
+            else:
+                print("Receive a message but have not handling function: {}".format(msg[0]))
+
