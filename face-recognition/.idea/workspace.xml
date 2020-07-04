@@ -2,48 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43001e49-a6bd-4530-8ff3-ac965016023a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pi_lock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/anim/app_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/anim/app_splash_subtitle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_loading.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/net_work/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/net_work/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/net_work/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/network/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoryAdaptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/drawable/ic_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_histories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/history_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000005.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000009.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000015.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000017.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000021.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000023.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000027.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000028.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000041.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000046.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000063.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000065.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000082.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/alan_grant/00000089.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encode_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/encode_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognize_faces_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize_faces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_bing_api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recognize_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/SplashAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/SplashAct.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,12 +61,14 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/program.py" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test.py" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSLint" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\DH\DA LTHT VDK\facelook\face-recognition\net_work" />
       <recent name="F:\workspace\DH\DA LTHT VDK\facelook\face-recognition" />
+      <recent name="F:\workspace\DH\DA LTHT VDK\facelook\face-recognition\Network" />
       <recent name="F:\workspace\DH\DA LTHT VDK\face-recognition-opencv" />
     </key>
   </component>
@@ -81,7 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.network">
     <configuration name="network" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="face-recognition-opencv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,6 +107,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+      <module name="face-recognition-opencv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Program Files\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.network" />
+      <item itemvalue="Python.test" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -125,7 +154,9 @@
       <workItem from="1593363791497" duration="1375000" />
       <workItem from="1593655443783" duration="6164000" />
       <workItem from="1593782988505" duration="1267000" />
-      <workItem from="1593784955822" duration="13475000" />
+      <workItem from="1593784955822" duration="22211000" />
+      <workItem from="1593847293803" duration="2351000" />
+      <workItem from="1593872152679" duration="11902000" />
     </task>
     <servers />
   </component>
@@ -149,9 +180,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/encode_faces.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -164,8 +200,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/face_recognition$Network.coverage" NAME="network Coverage Results" MODIFIED="1593798360436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/face_recognition$Network.coverage" NAME="network Coverage Results" MODIFIED="1593845585669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/face_recognition$network.coverage" NAME="network Coverage Results" MODIFIED="1593884189616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face_recognition_opencv$program.coverage" NAME="program Coverage Results" MODIFIED="1591523426506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face_recognition$program.coverage" NAME="program Coverage Results" MODIFIED="1593705442837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Network" />
+    <SUITE FILE_PATH="coverage/face_recognition$test.coverage" NAME="test Coverage Results" MODIFIED="1593876746858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

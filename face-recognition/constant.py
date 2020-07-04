@@ -1,10 +1,12 @@
-# constant for network
+# constants for network
 PORT = 5005
-HOST = '192.168.1.9'
-BUFF_SIZE = 1024
+HOST = '192.168.1.3'
 SEPARATOR = "|~|"
 
-# constant for lock
+
+
+
+# constants for lock
 STATE_LOCKED = 0
 STATE_UNLOCKED = 1
 STATE_TRAINING = 2
@@ -14,6 +16,11 @@ DELAY = {
     STATE_TRAINING: 15
 }
 
+# constants for training
+TIMEOUT = 20
+TIMES_TRAIN = 20
+
+# constants for accounts
 ACCOUNT = {
     "pi": [
         "pi",

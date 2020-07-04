@@ -3,40 +3,49 @@ import imutils
 import cv2
 
 
-def recognize_face(frame, data):
-    detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+def recognize_face(frame, data, detectionMethod):
     # resize to 500px (to speedup processing)
     frame = imutils.resize(frame, width=500)
 
-    # convert the input frame from (1) BGR to grayscale (for face
-    # detection) and (2) from BGR to RGB (for face recognition)
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    # convert the input frame from BGR to RGB then resize it to have
+    # a width of 750px (to speedup processing)
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    rgb = imutils.resize(rgb, width=750)
+    r = frame.shape[1] / float(rgb.shape[1])
 
-    # detect faces in the grayscale frame
-    rects = detector.detectMultiScale(gray, scaleFactor=1.1,
-                                      minNeighbors=5, minSize=(30, 30),
-                                      flags=cv2.CASCADE_SCALE_IMAGE)
+    # detect the (x, y)-coordinates of the bounding boxes
+    # corresponding to each face in the input frame, then compute
+    # the facial embeddings for each face
+    boxes = face_recognition.face_locations(rgb, model=detectionMethod)
 
-    # OpenCV returns bounding box coordinates in (x, y, w, h) order
-    # but we need them in (top, right, bottom, left) order, so we
-    # need to do a bit of reordering
-    boxes = [(y, x + w, y + h, x) for (x, y, w, h) in rects]
-
+    # can't detect face's bounding
     if len(boxes) <= 0:
         cv2.imshow("Frame", frame)
-        cv2.waitKey()
-        return False
+        key = cv2.waitKey(1) & 0xFF
+        # if the `q` key was pressed, break from the loop
+        if key == ord("q"):
+            return False, ""
+        return False, ""
 
     for (top, right, bottom, left) in boxes:
-
+        # rescale the face coordinates
+        top = int(top * r)
+        right = int(right * r)
+        bottom = int(bottom * r)
+        left = int(left * r)
         # draw the predicted face name on the image
         cv2.rectangle(frame, (left, top), (right, bottom),
                       (0, 255, 0), 2)
 
+        # show frame
         cv2.imshow("Frame", frame)
-        cv2.waitKey()
+        key = cv2.waitKey(1) & 0xFF
+        # if the `q` key was pressed, break from the loop
+        if key == ord("q"):
+            break
+        continue
 
+    # encode the face in frame
     encoding = face_recognition.face_encodings(rgb, boxes)[0]
 
     # loop over the facial embeddings
@@ -46,10 +55,11 @@ def recognize_face(frame, data):
                                                  encoding)
         fail = 0
         threshold = 0
-        # check to see if we have found a match
+
+        # find number of encoding face not match
         for match in matches:
             if not match:
                 fail += 1
         if fail <= threshold:
             return True, name
-    return False
+    return False, ""
