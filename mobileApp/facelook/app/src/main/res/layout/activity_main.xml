@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.facelook.ui.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/button_round"
+    >
+
+    <Button
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:id="@+id/btn_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_round_blue"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Lock"/>
+    <Button
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:id="@+id/btn_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_round_blue"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Unlock"/>
+    <Button
+        android:layout_margin="30dp"
+        android:padding="10dp"
+
+        android:id="@+id/btn_add_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_round_blue"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Add face"/>
+    <Button
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_round_blue"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="History"/>
+
+
+</LinearLayout>
