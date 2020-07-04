@@ -17,8 +17,8 @@ DELAY = {
 }
 
 # constants for training
-TIMEOUT = 20
-TIMES_TRAIN = 20
+TIMEOUT = 30
+TIMES_TRAIN = 10
 
 # constants for accounts
 ACCOUNT = {

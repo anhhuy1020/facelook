@@ -2,29 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43001e49-a6bd-4530-8ff3-ac965016023a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/net_work/network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/net_work/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/net_work/response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/network/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoryAdaptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/drawable/ic_arrow_back.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_histories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/history_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete_face.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Event/EventCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Event/EventDataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Event/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Event/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/BinaryUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/CmdConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/ErrorConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/NetworkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/BasePackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Receive/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Receive/ResHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Receive/ResponsePackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Send/BaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Send/ReqTrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/Package/Send/RequestPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/ReceiveModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/Network/SendModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Pi/.idea/Pi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Pi/Network/UDPNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encode_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/encode_faces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/encodings.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/encodings.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_work/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_work/network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_work/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_work/response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recognize_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/recognize_faces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/network/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/data/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/network/NetworkController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoriesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoriesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoryAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/HistoryAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/SplashAct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/java/com/example/facelook/ui/SplashAct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_histories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mobileApp/facelook/app/src/main/res/layout/activity_histories.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +168,7 @@
       <workItem from="1593782988505" duration="1267000" />
       <workItem from="1593784955822" duration="22211000" />
       <workItem from="1593847293803" duration="2351000" />
-      <workItem from="1593872152679" duration="11902000" />
+      <workItem from="1593872152679" duration="29383000" />
     </task>
     <servers />
   </component>
@@ -185,9 +197,34 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/net_work/network.py</url>
+          <line>159</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/program.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="10" />
+          <line>46</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/net_work/network.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/net_work/response.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -198,10 +235,15 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="length" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/face_recognition$Network.coverage" NAME="network Coverage Results" MODIFIED="1593845585669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/face_recognition$network.coverage" NAME="network Coverage Results" MODIFIED="1593884189616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/face_recognition$network.coverage" NAME="network Coverage Results" MODIFIED="1593904969847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face_recognition_opencv$program.coverage" NAME="program Coverage Results" MODIFIED="1591523426506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/face_recognition$program.coverage" NAME="program Coverage Results" MODIFIED="1593705442837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Network" />
     <SUITE FILE_PATH="coverage/face_recognition$test.coverage" NAME="test Coverage Results" MODIFIED="1593876746858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

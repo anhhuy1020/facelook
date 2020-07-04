@@ -24,10 +24,13 @@ class CMD(int):
     UNLOCK = 1
     TRAIN = 2
     HISTORY = 3
+    LOGIN = 99
 
 
 class ERROR(int):
     SUCCESS = 0
+    FAIL = 1
+    INVALID_NAME = 2
 
 
 def get_session():
@@ -45,8 +48,6 @@ class base_package:
         return self.cmd_id
 
     def get_raw_data(self) -> bytearray:
-        if self._data is None:
-            self._data = bytearray()
         return self._data
 
     def set_raw_data(self, data: bytearray):
@@ -69,6 +70,8 @@ class res_package(base_package):
         self.error = error
 
     def get_length_data(self) -> int:
+        if self._data is None:
+            return LENGTH_DATA.ERROR + LENGTH_DATA.CMD
         # 2 for cmd_id and 2 for error
         return len(self._data) + LENGTH_DATA.ERROR + LENGTH_DATA.CMD
 
@@ -96,6 +99,7 @@ class base_response:
         if value is None:
             value = ""
         bf.put(len(value), LENGTH_DATA.STR)
+        bf.put(value)
 
     @staticmethod
     def pack_buffer(bf: ByteBuffer) -> bytearray:
@@ -144,8 +148,27 @@ class client_handler:
         self.handle_request_cb = handle_client_request_cb
         self.session = get_session()
 
-    def send(self, msg):
-        self.writer.write(msg + "\n").encode('utf8')
+    def send_common(self, cmd_id: int, error: int = ERROR.SUCCESS):
+        package = res_package(cmd_id, error)
+        self.send(package)
+
+    def send_response(self, res: base_response):
+        res.prepare_package()
+        self.send(res.get_package())
+
+    def send(self, package: res_package):
+        bf = ByteBuffer.allocate(1 + package.get_length_data() + LENGTH_DATA.LENGTH_PACKAGE)
+        bf.put(0, 1)    # for ping
+        length = package.get_length_data()
+        bf.put(package.get_length_data(), LENGTH_DATA.LENGTH_PACKAGE)
+        bf.put(package.get_cmd_id(), LENGTH_DATA.CMD)
+        bf.put(package.get_error(), LENGTH_DATA.ERROR)
+        length = bf.position
+        bf.rewind()
+        result = bf.array(length)
+        if package.get_raw_data() is not None:
+            result.extend(package.get_raw_data())
+        self.writer.write(result)
 
     async def read(self):
         while True:
@@ -155,10 +178,10 @@ class client_handler:
             if ping == 0:
                 length_package = int.from_bytes(await self.reader.read(LENGTH_DATA.LENGTH_PACKAGE),
                                                 byteorder='big', signed=True)
-                if length_package > 2:
+                if length_package >= 2:
                     cmd = int.from_bytes(await self.reader.read(LENGTH_DATA.CMD),
                                          byteorder='big', signed=True)
-                    package = res_package(cmd)
+                    package = req_package(cmd)
                     length_package -= 2
                     if length_package > 0:
                         data = await self.reader.read(length_package)
