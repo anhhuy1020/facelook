@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.facelook.R;
-import com.example.facelook.network.History;
+import com.example.facelook.data.History;
 
 import java.util.Calendar;
 import java.util.List;
@@ -44,7 +44,7 @@ public class HistoryAdaptor extends RecyclerView.Adapter<HistoryAdaptor.HistoryV
                 + calendar.get(Calendar.SECOND)
                 ;
 
-        holder.date.setText(theDate.toString());
+        holder.date.setText(theDate);
     }
 
     @Override

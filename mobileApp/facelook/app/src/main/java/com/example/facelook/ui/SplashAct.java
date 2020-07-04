@@ -36,7 +36,7 @@ public class SplashAct extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent gotoLogin = new Intent(SplashAct.this, HistoriesActivity.class);
+                Intent gotoLogin = new Intent(SplashAct.this, LoginActivity.class);
                 startActivity(gotoLogin);
                 finish();
             }
