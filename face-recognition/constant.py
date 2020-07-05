@@ -1,6 +1,6 @@
 # constants for network
 PORT = 5005
-HOST = '192.168.1.3'
+HOST = '192.168.43.82'
 SEPARATOR = "|~|"
 
 
@@ -17,8 +17,8 @@ DELAY = {
 }
 
 # constants for training
-TIMEOUT = 30
-TIMES_TRAIN = 10
+TIMEOUT = 120
+TIMES_TRAIN = 30
 
 # constants for accounts
 ACCOUNT = {

@@ -10,7 +10,7 @@ def recognize_face(frame, data, detectionMethod):
     # convert the input frame from BGR to RGB then resize it to have
     # a width of 750px (to speedup processing)
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    rgb = imutils.resize(rgb, width=750)
+    rgb = imutils.resize(frame, width=750)
     r = frame.shape[1] / float(rgb.shape[1])
 
     # detect the (x, y)-coordinates of the bounding boxes
@@ -60,6 +60,9 @@ def recognize_face(frame, data, detectionMethod):
         for match in matches:
             if not match:
                 fail += 1
+
         if fail <= threshold:
             return True, name
+
+        print("Fail {}".format(fail))
     return False, ""
